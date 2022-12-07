@@ -1,0 +1,261 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--basic);
+}
+
+:root{
+    --heading: 'Nunito', sans-serif;
+    --basic: 'Open Sans', sans-serif;
+    --dark: #212529
+}
+
+body{
+    line-height: 1.5;
+}
+
+h1, h2, h3{
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+blockquote{
+    text-transform: uppercase;
+    font-size: 26px;
+    font-family: var(--heading);
+    font-weight: 800;
+    max-width: 500px;
+}
+
+/* homepage */
+.page_wrapper{
+    max-width: 1920px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+}
+
+.page_wrapper section{
+    width: 50%;
+}
+
+.bg_header{
+    background-color: #7025FB;
+    padding: 30px 60px;
+}
+
+.homepage_bg{
+    background-image: url("img/bg/landing-page.png");
+}
+
+.bg_img{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg_header img{
+    vertical-align: top;
+}
+
+
+.homepage_start{
+    background-color: #FD5334;
+    display: flex;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+.start_wrapper{
+    padding:0 80px;
+}
+
+.start_heading{
+    font-family: var(--heading);
+    color: white;
+    text-transform: uppercase;
+    font-size: 80px;
+    padding-bottom: 100px;
+}
+
+.start_heading span{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--dark);
+    vertical-align: middle;
+    font-family: inherit;
+}
+
+.btn{
+    background-color: var(--dark);
+    padding: 12px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    line-height: 1.5;
+    text-decoration: none;
+    max-width: 200px;
+}
+
+.btn:hover{
+    outline: 5px solid #8684ffc7;
+}
+
+
+/* registration form page */
+.reg_bg{
+    background-image: url("img/bg/registration-page.png");
+}
+
+.bg_quote{
+    padding: 210px 130px;
+    font-family: var(--heading);
+    text-transform: uppercase;
+}
+
+.author{
+    display: block;
+    color: #E5E6E8;
+    font-size: 24px;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.reg_container{
+    padding:30px 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.reg_container::before{
+    content: " ";
+    height: 1px;
+    width: 100%;
+    background-color: rgba(185, 180, 196, 0.3);
+    position:absolute;
+    top: 83px;
+    right: 0
+}
+
+.reg_info_container{
+    display: flex;
+    gap: 70px;
+    padding: 20px 0;
+} 
+
+.reg_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+.reg_info>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.info_list{
+   color: #95939A;
+    font-weight: 700;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #E5E6E8;
+    background-color: #F5F5F5;
+
+}
+
+.reg_info:hover .info_list, .reg_info:active .info_list {
+    background-color: #E9FAF1;
+    color: var(--dark);
+}
+
+.reg_form, .reg_form_list{
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.reg_form_list input{
+    padding: 8px 15px;
+    border: none;
+    box-shadow: inset 0px -1px 0px rgb(0 0 0 / 13%);
+    outline: none;
+    border-radius: 4px;
+}
+
+
+.reg_form_list input:focus{
+    background-color: #E9ECEF;
+}
+
+.info_button{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.info_button .back{
+    background-color: #fff;
+    outline: var(--dark) solid 1px;
+    color: var(--dark);
+}
+
+.info_button .back:hover{
+    background-color: #E5E6E8;
+}
+
+.xp_bg{
+    background-image: url('img/bg/xp-page.png');
+}
+
+.xp_form_list input{
+    padding: 5px 10px;
+    border: none;
+    box-shadow: inset 0px -1px 0px rgb(0 0 0 / 13%);
+    outline: none;
+    border-radius: 4px; 
+    font-size: 20px;
+}
+
+.xp_form_list label {
+    margin-right: 20px;
+}
+
+.xp_form_list p{
+    font-family: var(--heading);
+    font-size: 20px;
+    padding: 20px 0;
+}
+
+input[radio]{
+    scale: 1.5;
+}
+
+.final_bg{
+    background-image: url('img/bg/final_page.png');
+}
+
+.reg_complete{
+    position: relative;
+}
+
+.reg_complete img{
+    position: absolute;
+    top: calc(50% - 201px);
+    right: calc(50% - 230px);
+}

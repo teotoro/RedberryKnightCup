@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redberry Knight Cup</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/69ec0bc506.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="experience">
+    <div class="page_wrapper">
+        <section class="bg_img xp_bg">
+            <div class="bg_header">
+                <img src="img/crown.svg" alt="crown">
+                <img src="img/Redberry-Knight-Cup.png" alt="">
+            </div>
+            <div class="bg_quote">
+                <blockquote>
+                    “Many have become chess masters;
+                    no one has become the master of chess.”
+                </blockquote>
+                <span class="author">-Siegbert Tarrasch</span>
+            </div>
+        </section>
+        <section class="xp_form">
+            <div class="reg_container">
+                <div class="reg_info_start">
+                    <h3>Start creating your account</h3>
+                </div>
+                <div class="reg_info_container">
+                    <div class="reg_info personal_info">
+                        <div class="info_list"><img src="img/checked.png" alt="personal info checked"></div>
+                        <div class="info_type active">Personal information</div>
+                    </div>
+                    <div class="reg_info xp_info">
+                        <div class="info_list">2</div>
+                        <div class="info_type">Chess experiencen</div>
+                    </div>
+                </div>
+                <div class="reg_info_heading">
+                    <h1>Chess experience</h1>
+                    <p>This is basic informaton fields</p>
+                </div>
+                <form class="reg_form" action="/action_page.php">
+                    <div class="xp_form_list">
+                            <input type="text" name="" id="" value="level of knowledge *">
+                            <input type="text" name="" id="" value="Choose your character *">
+                            <p>Have you participated in the Redberry Championship? *</p>
+                            <input type="radio" name="yesno" id="Yes" checked>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="yesno" value="no" id="no" checked>
+                            <label for="no">No</label>
+                    </div>
+                    <div class="info_button">
+                        <button onclick="history.back()" class="btn back">back</button>
+                        <button type="submit" class="btn next">next <img src="img/arrow.svg"></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="myScript.js"></script>
+</body>
+
+</html>

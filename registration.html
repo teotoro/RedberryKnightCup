@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redberry Knight Cup</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/69ec0bc506.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body id="registration">
+    <div class="page_wrapper">
+        <section class="bg_img reg_bg">
+            <div class="bg_header">
+                <img src="img/crown.svg" alt="crown">
+                <img src="img/Redberry-Knight-Cup.png" alt="">
+            </div>
+            <div class="bg_quote">
+                <blockquote>
+                    “When you see a good move,
+                    look for a better one.”
+                </blockquote>
+                <span class="author">-Emanuel Lasker</span>
+            </div>
+        </section>
+        <section class="registration_form">
+            <div class="reg_container">
+                <div class="reg_info_start">
+                    <h3>Start creating your account</h3>
+                </div>
+                <div class="reg_info_container">
+                    <div class="reg_info personal_info">
+                        <div class="info_list">1</div>
+                        <div class="info_type">Personal information</div>
+                    </div>
+                    <div class="reg_info xp_info">
+                        <div class="info_list">2</div>
+                        <div class="info_type">Chess experiencen</div>
+                    </div>
+                </div>
+                <div class="reg_info_heading">
+                    <h1>Personal information</h1>
+                    <p>This is basic informaton fields</p>
+                </div>
+                <form class="reg_form" action="/action_page.php">
+                    <div class="reg_form_list">
+                        <input type="text" id="name" name="name" value="Name" minlength="2" required>
+                        <input type="email" id="email" name="email" value="Email address" pattern=".+@redberry\.ge"
+                            required>
+                        <input type="tel" id="phone" name="phone" value="Phone number" pattern="[0-9]{9}" required>
+                        <input type="text" id="bday" name="bday" value="Date of birth" onfocus="(this.type='date')"
+                            onblur="if(!this.value)this.type='text'" required>
+                    </div>
+                    <div class="info_button">
+                        <button onclick="history.back()" class="btn back">back</button>
+                        <button type="submit" class="btn next">next <img src="img/arrow.svg"></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <script src="myScript.js"></script>
+</body>
+
+</html>
