@@ -44,7 +44,7 @@
                 </div>
                 <div class="reg_info_container">
                     <div class="reg_info personal_info">
-                        <div class="info_list">1</div>
+                        <div class="info_list active_info">1</div>
                         <div class="info_type">Personal information</div>
                     </div>
                     <div class="reg_info xp_info">
@@ -58,11 +58,11 @@
                 </div>
                 <form class="reg_form" action="/action_page.php">
                     <div class="reg_form_list">
-                        <input type="text" id="name" name="name" value="Name" minlength="2" required>
-                        <input type="email" id="email" name="email" value="Email address" pattern=".+@redberry\.ge"
+                        <input type="text" id="name" name="name" placeholder="Name" minlength="2" required>
+                        <input type="email" id="email" name="email" placeholder="Email address" pattern=".+@redberry\.ge"
                             required>
-                        <input type="tel" id="phone" name="phone" value="Phone number" pattern="[0-9]{9}" required>
-                        <input type="text" id="bday" name="bday" value="Date of birth" onfocus="(this.type='date')"
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="[0-9]{9}" required>
+                        <input type="text" id="bday" name="bday" placeholder="Date of birth" onfocus="(this.type='date')"
                             onblur="if(!this.value)this.type='text'" required>
                     </div>
                     <div class="info_button">

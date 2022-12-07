@@ -11,6 +11,10 @@
     --dark: #212529
 }
 
+html, body{
+    height: 100%;
+}
+
 body{
     line-height: 1.5;
 }
@@ -63,7 +67,8 @@ blockquote{
     background-color: #FD5334;
     display: flex;
     flex-direction: column;
-    padding-top: 200px;
+    justify-content: center;
+    padding: 200px 0;
 }
 
 .start_wrapper{
@@ -177,7 +182,7 @@ blockquote{
 
 }
 
-.reg_info:hover .info_list, .reg_info:active .info_list {
+.active_info {
     background-color: #E9FAF1;
     color: var(--dark);
 }
