@@ -34,8 +34,8 @@ blockquote{
 
 /* homepage */
 .page_wrapper{
-    max-width: 1920px;
-    height: 100vh;
+    max-width: 1980px;
+    height: 100%;
     display: flex;
     margin: auto;
 }
@@ -195,6 +195,10 @@ blockquote{
     height: 100%;
 }
 
+.reg_form_list{
+    max-height: 500px;
+}
+
 .reg_form_list input{
     padding: 8px 15px;
     border: none;
@@ -203,6 +207,13 @@ blockquote{
     border-radius: 4px;
 }
 
+/* if pass validation appears green ckeck tick */
+.reg_form_list input:valid {
+    background: url("img/validcheck.png");
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 99%;
+}
 
 .reg_form_list input:focus{
     background-color: #E9ECEF;

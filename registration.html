@@ -58,12 +58,11 @@
                 </div>
                 <form class="reg_form" action="/action_page.php">
                     <div class="reg_form_list">
-                        <input type="text" id="name" name="name" placeholder="Name" minlength="2" required>
-                        <input type="email" id="email" name="email" placeholder="Email address" pattern=".+@redberry\.ge"
+                        <input type="text" id="name" name="name" placeholder="Name *" minlength="2" required>
+                        <input type="email" id="email" name="email" placeholder="Email address *" pattern=".+@redberry\.ge"
                             required>
-                        <input type="tel" id="phone" name="phone" placeholder="Phone number" pattern="[0-9]{9}" required>
-                        <input type="text" id="bday" name="bday" placeholder="Date of birth" onfocus="(this.type='date')"
-                            onblur="if(!this.value)this.type='text'" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone number *" pattern="[0-9]{9}" required>
+                        <input type="text" id="bday" name="bday" placeholder="Date of birth (DD/MM/YYYY) *" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" required>
                     </div>
                     <div class="info_button">
                         <button onclick="history.back()" class="btn back">back</button>
