@@ -56,7 +56,7 @@
                     <h1>Personal information</h1>
                     <p>This is basic informaton fields</p>
                 </div>
-                <form class="reg_form" action="/action_page.php">
+                <form class="reg_form" action="#">
                     <div class="reg_form_list">
                         <input type="text" id="name" name="name" placeholder="Name *" minlength="2" required>
                         <input type="email" id="email" name="email" placeholder="Email address *" pattern=".+@redberry\.ge"
@@ -66,7 +66,7 @@
                     </div>
                     <div class="info_button">
                         <button onclick="history.back()" class="btn back">back</button>
-                        <button type="submit" class="btn next">next <img src="img/arrow.svg"></button>
+                        <button onclick="window.location.href= 'experience.html'" type="submit" class="btn next" id="personal">next <img src="img/arrow.svg"></button>
                     </div>
                 </form>
             </div>

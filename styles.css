@@ -24,6 +24,10 @@ h1, h2, h3{
     text-transform: capitalize;
 }
 
+li{
+    list-style-type: none;
+}
+
 blockquote{
     text-transform: uppercase;
     font-size: 26px;
@@ -33,6 +37,7 @@ blockquote{
 }
 
 /* homepage */
+/*styles page's wrapper */
 .page_wrapper{
     max-width: 1980px;
     height: 100%;
@@ -44,11 +49,17 @@ blockquote{
     width: 50%;
 }
 
+/* styles hader of left side */
 .bg_header{
     background-color: #7025FB;
     padding: 30px 60px;
 }
 
+.bg_header img{
+    vertical-align: top;
+}
+
+/* background of left side of homepage */
 .homepage_bg{
     background-image: url("img/bg/landing-page.png");
 }
@@ -58,11 +69,7 @@ blockquote{
     background-repeat: no-repeat;
 }
 
-.bg_header img{
-    vertical-align: top;
-}
-
-
+/* background and style of right side of homepage */
 .homepage_start{
     background-color: #FD5334;
     display: flex;
@@ -75,6 +82,7 @@ blockquote{
     padding:0 80px;
 }
 
+/* styles right side's heading */
 .start_heading{
     font-family: var(--heading);
     color: white;
@@ -83,6 +91,7 @@ blockquote{
     padding-bottom: 100px;
 }
 
+/* styles diferent size text in heading */
 .start_heading span{
     font-size: 20px;
     font-weight: bold;
@@ -91,6 +100,7 @@ blockquote{
     font-family: inherit;
 }
 
+/* common style of button */
 .btn{
     background-color: var(--dark);
     padding: 12px 20px;
@@ -108,16 +118,19 @@ blockquote{
     max-width: 200px;
 }
 
+/* purple blue outline on button on hover */
 .btn:hover{
     outline: 5px solid #8684ffc7;
 }
 
 
 /* registration form page */
+/* background of left side of registration page */
 .reg_bg{
     background-image: url("img/bg/registration-page.png");
 }
 
+/* styles quotes on background of left side */
 .bg_quote{
     padding: 210px 130px;
     font-family: var(--heading);
@@ -132,6 +145,7 @@ blockquote{
     margin: 20px 0;
 }
 
+/*wrapper of of registration*/
 .reg_container{
     padding:30px 50px;
     position: relative;
@@ -142,6 +156,7 @@ blockquote{
     gap: 20px;
 }
 
+/* horizotal line after heading */
 .reg_container::before{
     content: " ";
     height: 1px;
@@ -152,11 +167,13 @@ blockquote{
     right: 0
 }
 
+/* styles first section of registration info types (personal and xp) */
 .reg_info_container{
     display: flex;
     gap: 70px;
     padding: 20px 0;
 } 
+
 
 .reg_info{
     display: flex;
@@ -182,11 +199,13 @@ blockquote{
 
 }
 
+/* styles active info type */
 .active_info {
     background-color: #E9FAF1;
     color: var(--dark);
 }
 
+/* types registration form inputs */
 .reg_form, .reg_form_list{
     max-width: 800px;
     display: flex;
@@ -207,7 +226,7 @@ blockquote{
     border-radius: 4px;
 }
 
-/* if pass validation appears green ckeck tick */
+/* if passes validation appears green ckeck tick */
 .reg_form_list input:valid {
     background: url("img/validcheck.png");
     background-size: 15px;
@@ -215,37 +234,108 @@ blockquote{
     background-position: 99%;
 }
 
+/* bg color when input is on focus */
 .reg_form_list input:focus{
     background-color: #E9ECEF;
 }
 
+/* styles iregistration pages buttons */
 .info_button{
     display: flex;
     justify-content: space-between;
     padding: 30px 0;
 }
 
+/* back button, which directs on previouse page */
 .info_button .back{
     background-color: #fff;
     outline: var(--dark) solid 1px;
     color: var(--dark);
 }
 
+/* changes back button's bg on hover */
 .info_button .back:hover{
     background-color: #E5E6E8;
 }
 
+
+/* experiense page */
+/* xp pages' background */
 .xp_bg{
     background-image: url('img/bg/xp-page.png');
 }
 
-.xp_form_list input{
-    padding: 5px 10px;
-    border: none;
-    box-shadow: inset 0px -1px 0px rgb(0 0 0 / 13%);
-    outline: none;
-    border-radius: 4px; 
+/* styles xp lvl and choose character inputs wrapper */
+.xp_form_stat{
+    display: flex;
+    gap: 20px; 
     font-size: 20px;
+}
+
+/* styles xp lvl and choose character inputs*/
+.xp_form_stat>div{
+    width: 40%;
+    min-width: 300px;
+    padding: 5px 15px;
+    box-shadow: inset 0px -1px 0px rgb(0 0 0 / 13%);
+    border-radius: 4px;
+    position:relative;
+}
+
+/* dropdown arro after xp inputs */
+.xp_form_stat>div::after{
+    content: url('img/downarrow.png');
+    position: absolute;
+    right: 0;
+}
+
+/* on hover arrow after xp inputs changes from down to up */
+.xp_form_stat>div:hover:after{
+    content: url('img/uparrow.png');
+}
+
+/* on hover appears xp inputs list */
+.xp_lvl:hover .sub_stat, .stat_char:hover .sub_stat{
+    visibility: visible;
+    height: auto;
+}
+
+/* styles xp lvl and charachters lists box */
+.sub_stat{
+    visibility: hidden;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 0;
+    border:1px solid rgb(0 0 0 / 13%);
+    text-transform: capitalize;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* styples xp input list's item */
+.sub_stat li{
+    padding: 5px 15px;
+}
+
+/* on hover xp lvl item changes bg and font weight */
+.sub_stat li:hover{
+    background-color: #F7F7F9;
+    font-weight: 700;
+}
+
+#charItems li{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+#charItems>span{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #817D7D;;
 }
 
 .xp_form_list label {

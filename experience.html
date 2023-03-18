@@ -18,6 +18,7 @@
         rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/69ec0bc506.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 
 </head>
@@ -56,19 +57,30 @@
                     <h1>Chess experience</h1>
                     <p>This is basic informaton fields</p>
                 </div>
-                <form class="reg_form" action="/action_page.php">
+                <form class="reg_form" action="#">
                     <div class="xp_form_list">
-                            <input type="text" name="" id="" value="level of knowledge *">
-                            <input type="text" name="" id="" value="Choose your character *">
-                            <p>Have you participated in the Redberry Championship? *</p>
-                            <input type="radio" name="yesno" id="Yes" checked>
-                            <label for="yes">Yes</label>
-                            <input type="radio" name="yesno" value="no" id="no" checked>
-                            <label for="no">No</label>
+                        <div class="xp_form_stat">
+                            <div class="xp_lvl">Level of knowledge * 
+                                <ul class="sub_stat">
+                                    <li>beginer</li>
+                                    <li>intermediate</li>
+                                    <li>professional</li>
+                                </ul>
+                            </div>
+                            <div class="stat_char">Choose your character * 
+                                <ul class="sub_stat" id="charItems">
+                                </ul>
+                            </div>
+                        </div>
+                        <p>Have you participated in the Redberry Championship? *</p>
+                        <input type="radio" name="yesno" id="Yes" checked>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="yesno" value="no" id="no" checked>
+                        <label for="no">No</label>
                     </div>
                     <div class="info_button">
-                        <button class="btn back">back</button>
-                        <button type="submit" class="btn next">next <img src="img/arrow.svg"></button>
+                        <button onclick="history.back()"  class="btn back">back</button>
+                        <button onclick="window.location.href='final.html'" type="submit" class="btn next" id="done">Done <img src="img/arrow.svg"></button>
                     </div>
                 </form>
             </div>
